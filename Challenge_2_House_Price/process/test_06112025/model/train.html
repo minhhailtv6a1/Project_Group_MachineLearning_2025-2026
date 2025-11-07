@@ -7526,7 +7526,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1201]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %load_ext autoreload</span>
@@ -7558,23 +7558,23 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1202]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># params_cfg = {</span>
 <span class="c1">#     "action"  : "main_feat01",  </span>
 <span class="c1">#     "seed"    : 42, # Set random seed</span>
 <span class="c1">#     "exp_dir" : os.path.abspath('../../exps'),</span>
-<span class="c1">#     'exp_name': 'featbase_03112025',</span>
+<span class="c1">#     'exp_name': 'featbase_06112025',</span>
 <span class="c1">#     "data_dir": os.path.abspath("../../data/titanic"),</span>
 <span class="c1">#     "verbose" : True,</span>
 <span class="c1"># }</span>
 <span class="n">params_cfg</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"action"</span>   <span class="p">:</span> <span class="s2">"train_feat01"</span><span class="p">,</span>  
-    <span class="s2">"feat_path"</span><span class="p">:</span> <span class="s2">"../../exps/featbase_03112025/data.npz"</span><span class="p">,</span>
+    <span class="s2">"feat_path"</span><span class="p">:</span> <span class="s2">"../../exps/featbase_06112025/data.npz"</span><span class="p">,</span>
     <span class="s2">"seed"</span>    <span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="c1"># Set random seed</span>
     <span class="s2">"exp_dir"</span> <span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">'../../exps'</span><span class="p">),</span>
-    <span class="s1">'exp_name'</span><span class="p">:</span> <span class="s1">'train_03112025'</span><span class="p">,</span>
+    <span class="s1">'exp_name'</span><span class="p">:</span> <span class="s1">'train_06112025'</span><span class="p">,</span>
     <span class="s2">"data_dir"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s2">"../../../data"</span><span class="p">),</span>
     <span class="s2">"verbose"</span> <span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
 <span class="p">}</span>
@@ -7599,13 +7599,13 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>+ action: train_feat01
-+ feat_path: ../../exps/featbase_03112025/data.npz
++ feat_path: ../../exps/featbase_06112025/data.npz
 + seed: 42
 + exp_dir: d:\dai_hoc\nam3\HK5\ML\LAB_GROUP\Challenge_2_House_Price\process\exps
-+ exp_name: train_03112025
++ exp_name: train_06112025
 + data_dir: d:\dai_hoc\nam3\HK5\ML\LAB_GROUP\Challenge_2_House_Price\data
 + verbose: True
-+ save_dir: d:\dai_hoc\nam3\HK5\ML\LAB_GROUP\Challenge_2_House_Price\process\exps\train_03112025
++ save_dir: d:\dai_hoc\nam3\HK5\ML\LAB_GROUP\Challenge_2_House_Price\process\exps\train_06112025
 </pre>
 </div>
 </div>
@@ -7627,7 +7627,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1203]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">data_dir</span><span class="si">}</span><span class="s1">/train.csv'</span><span class="p">)</span>
@@ -7652,9 +7652,9 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>---------- information ----------
-train-col: {'KitchenQual', 'GarageType', 'BsmtFinSF2', 'GarageArea', 'PoolArea', 'Electrical', 'GarageQual', 'LotFrontage', 'Exterior1st', 'KitchenAbvGr', 'LotConfig', 'WoodDeckSF', 'SaleType', 'GarageCars', 'OverallCond', 'YearBuilt', 'ScreenPorch', 'FireplaceQu', 'EnclosedPorch', 'MSSubClass', 'MoSold', 'Condition2', 'OverallQual', 'BsmtFinType2', 'BldgType', 'LowQualFinSF', 'BsmtFinType1', 'RoofStyle', 'MasVnrArea', 'BsmtUnfSF', '2ndFlrSF', 'MSZoning', 'Fireplaces', 'ExterQual', 'ExterCond', 'TotalBsmtSF', 'RoofMatl', 'HalfBath', 'BedroomAbvGr', 'Utilities', 'GrLivArea', 'MiscFeature', 'CentralAir', '3SsnPorch', 'OpenPorchSF', 'YrSold', 'Street', 'BsmtQual', 'LandSlope', 'MiscVal', 'Functional', 'Exterior2nd', 'MasVnrType', 'PoolQC', 'FullBath', 'BsmtExposure', 'GarageFinish', 'Fence', 'LandContour', 'BsmtHalfBath', 'LotArea', 'TotRmsAbvGrd', 'Condition1', 'Neighborhood', 'GarageCond', 'BsmtCond', '1stFlrSF', 'YearRemodAdd', 'LotShape', 'BsmtFullBath', 'Heating', 'PavedDrive', 'BsmtFinSF1', 'HouseStyle', 'SalePrice', 'SaleCondition', 'Foundation', 'GarageYrBlt', 'Id', 'HeatingQC', 'Alley'}
-test-col: {'KitchenQual', 'GarageType', 'BsmtFinSF2', 'GarageArea', 'PoolArea', 'Electrical', 'GarageQual', 'LotFrontage', 'Exterior1st', 'KitchenAbvGr', 'LotConfig', 'WoodDeckSF', 'SaleType', 'GarageCars', 'OverallCond', 'YearBuilt', 'ScreenPorch', 'FireplaceQu', 'EnclosedPorch', 'MSSubClass', 'MoSold', 'Condition2', 'OverallQual', 'BsmtFinType2', 'BldgType', 'LowQualFinSF', 'BsmtFinType1', 'RoofStyle', 'MasVnrArea', 'BsmtUnfSF', '2ndFlrSF', 'MSZoning', 'Fireplaces', 'ExterQual', 'ExterCond', 'TotalBsmtSF', 'RoofMatl', 'HalfBath', 'BedroomAbvGr', 'Utilities', 'GrLivArea', 'MiscFeature', 'CentralAir', '3SsnPorch', 'OpenPorchSF', 'YrSold', 'Street', 'BsmtQual', 'LandSlope', 'MiscVal', 'Functional', 'Exterior2nd', 'MasVnrType', 'PoolQC', 'FullBath', 'BsmtExposure', 'GarageFinish', 'Fence', 'LandContour', 'BsmtHalfBath', 'LotArea', 'TotRmsAbvGrd', 'Condition1', 'Neighborhood', 'GarageCond', 'BsmtCond', '1stFlrSF', 'YearRemodAdd', 'LotShape', 'BsmtFullBath', 'Heating', 'PavedDrive', 'BsmtFinSF1', 'HouseStyle', 'SaleCondition', 'Foundation', 'GarageYrBlt', 'Id', 'HeatingQC', 'Alley'}
-Union: {'KitchenQual', 'GarageType', 'BsmtFinSF2', 'GarageArea', 'PoolArea', 'Electrical', 'GarageQual', 'LotFrontage', 'Exterior1st', 'KitchenAbvGr', 'LotConfig', 'WoodDeckSF', 'SaleType', 'GarageCars', 'OverallCond', 'YearBuilt', 'ScreenPorch', 'FireplaceQu', 'EnclosedPorch', 'MSSubClass', 'MoSold', 'Condition2', 'OverallQual', 'BsmtFinType2', 'BldgType', 'LowQualFinSF', 'BsmtFinType1', 'RoofStyle', 'MasVnrArea', 'BsmtUnfSF', '2ndFlrSF', 'MSZoning', 'Fireplaces', 'ExterQual', 'ExterCond', 'TotalBsmtSF', 'RoofMatl', 'HalfBath', 'BedroomAbvGr', 'Utilities', 'GrLivArea', 'MiscFeature', 'CentralAir', '3SsnPorch', 'OpenPorchSF', 'YrSold', 'Street', 'BsmtQual', 'LandSlope', 'MiscVal', 'Functional', 'Exterior2nd', 'MasVnrType', 'PoolQC', 'FullBath', 'BsmtExposure', 'GarageFinish', 'Fence', 'LandContour', 'BsmtHalfBath', 'LotArea', 'TotRmsAbvGrd', 'Condition1', 'Neighborhood', 'GarageCond', 'BsmtCond', '1stFlrSF', 'YearRemodAdd', 'LotShape', 'BsmtFullBath', 'Heating', 'PavedDrive', 'BsmtFinSF1', 'HouseStyle', 'SaleCondition', 'Foundation', 'GarageYrBlt', 'Id', 'HeatingQC', 'Alley'}
+train-col: {'GarageType', 'Exterior1st', 'MiscVal', 'MoSold', 'Alley', 'GarageYrBlt', 'BldgType', 'GrLivArea', 'MSZoning', 'BsmtQual', 'Fireplaces', 'HalfBath', 'RoofStyle', 'GarageCars', 'LotFrontage', 'OverallCond', 'BsmtCond', 'BsmtFinType2', 'EnclosedPorch', 'KitchenAbvGr', 'MasVnrType', 'Fence', 'BsmtHalfBath', 'BsmtFinType1', 'TotalBsmtSF', 'WoodDeckSF', 'KitchenQual', 'Id', 'SalePrice', 'PoolQC', 'GarageCond', 'Exterior2nd', 'MasVnrArea', 'BsmtFinSF1', 'BedroomAbvGr', 'SaleType', 'LotConfig', 'OverallQual', 'OpenPorchSF', 'Condition1', 'GarageQual', 'GarageFinish', 'FullBath', 'HeatingQC', 'LandContour', 'ScreenPorch', 'BsmtFullBath', 'Utilities', '1stFlrSF', 'BsmtUnfSF', 'RoofMatl', 'GarageArea', 'PavedDrive', 'BsmtExposure', 'TotRmsAbvGrd', 'YrSold', 'LotShape', 'HouseStyle', 'Functional', 'CentralAir', 'Street', 'SaleCondition', 'PoolArea', 'ExterQual', 'Heating', 'YearBuilt', 'Foundation', 'BsmtFinSF2', 'Electrical', 'FireplaceQu', 'YearRemodAdd', 'Condition2', 'MiscFeature', '3SsnPorch', 'MSSubClass', 'LowQualFinSF', 'LotArea', '2ndFlrSF', 'LandSlope', 'ExterCond', 'Neighborhood'}
+test-col: {'GarageType', 'Exterior1st', 'MiscVal', 'MoSold', 'Alley', 'GarageYrBlt', 'BldgType', 'GrLivArea', 'MSZoning', 'BsmtQual', 'Fireplaces', 'HalfBath', 'RoofStyle', 'GarageCars', 'LotFrontage', 'OverallCond', 'BsmtCond', 'BsmtFinType2', 'EnclosedPorch', 'KitchenAbvGr', 'MasVnrType', 'Fence', 'BsmtHalfBath', 'BsmtFinType1', 'TotalBsmtSF', 'WoodDeckSF', 'KitchenQual', 'Id', 'PoolQC', 'GarageCond', 'Exterior2nd', 'MasVnrArea', 'BsmtFinSF1', 'BedroomAbvGr', 'SaleType', 'LotConfig', 'OverallQual', 'OpenPorchSF', 'Condition1', 'GarageQual', 'GarageFinish', 'FullBath', 'HeatingQC', 'LandContour', 'ScreenPorch', 'BsmtFullBath', 'Utilities', '1stFlrSF', 'BsmtUnfSF', 'RoofMatl', 'GarageArea', 'PavedDrive', 'BsmtExposure', 'TotRmsAbvGrd', 'YrSold', 'LotShape', 'HouseStyle', 'Functional', 'CentralAir', 'Street', 'SaleCondition', 'PoolArea', 'ExterQual', 'Heating', 'YearBuilt', 'Foundation', 'BsmtFinSF2', 'Electrical', 'FireplaceQu', 'YearRemodAdd', 'Condition2', 'MiscFeature', '3SsnPorch', 'MSSubClass', 'LowQualFinSF', 'LotArea', '2ndFlrSF', 'LandSlope', 'ExterCond', 'Neighborhood'}
+Union: {'GarageType', 'Exterior1st', 'MiscVal', 'MoSold', 'Alley', 'GarageYrBlt', 'BldgType', 'GrLivArea', 'MSZoning', 'BsmtQual', 'Fireplaces', 'HalfBath', 'RoofStyle', 'GarageCars', 'LotFrontage', 'OverallCond', 'BsmtCond', 'BsmtFinType2', 'EnclosedPorch', 'KitchenAbvGr', 'MasVnrType', 'Fence', 'BsmtHalfBath', 'BsmtFinType1', 'TotalBsmtSF', 'WoodDeckSF', 'KitchenQual', 'Id', 'PoolQC', 'GarageCond', 'Exterior2nd', 'MasVnrArea', 'BsmtFinSF1', 'BedroomAbvGr', 'SaleType', 'LotConfig', 'OverallQual', 'OpenPorchSF', 'Condition1', 'GarageQual', 'GarageFinish', 'FullBath', 'HeatingQC', 'LandContour', 'ScreenPorch', 'BsmtFullBath', 'Utilities', '1stFlrSF', 'BsmtUnfSF', 'RoofMatl', 'GarageArea', 'PavedDrive', 'BsmtExposure', 'TotRmsAbvGrd', 'YrSold', 'LotShape', 'HouseStyle', 'Functional', 'CentralAir', 'Street', 'SaleCondition', 'PoolArea', 'ExterQual', 'Heating', 'YearBuilt', 'Foundation', 'BsmtFinSF2', 'Electrical', 'FireplaceQu', 'YearRemodAdd', 'Condition2', 'MiscFeature', '3SsnPorch', 'MSSubClass', 'LowQualFinSF', 'LotArea', '2ndFlrSF', 'LandSlope', 'ExterCond', 'Neighborhood'}
 Difference: {'SalePrice'}
 </pre>
 </div>
@@ -7688,7 +7688,7 @@ Difference: {'SalePrice'}
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1204]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_train</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -7702,7 +7702,7 @@ Difference: {'SalePrice'}
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1204]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Id                 0
 MSSubClass         0
@@ -7725,7 +7725,7 @@ Length: 81, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1205]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_test</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -7739,7 +7739,7 @@ Length: 81, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1205]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Id                 0
 MSSubClass         0
@@ -7773,7 +7773,7 @@ Length: 80, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1206]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">drop_missing_columns</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.4</span><span class="p">):</span>
@@ -7795,7 +7795,7 @@ Length: 80, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1207]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -7809,7 +7809,7 @@ Length: 80, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1208]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span> <span class="o">=</span> <span class="n">drop_missing_columns</span><span class="p">(</span><span class="n">df_output</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
@@ -7848,7 +7848,7 @@ Columns to drop: ['Alley', 'MasVnrType', 'FireplaceQu', 'PoolQC', 'Fence', 'Misc
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1209]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">drop_zero_columns</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
@@ -7872,7 +7872,7 @@ Columns to drop: ['Alley', 'MasVnrType', 'FireplaceQu', 'PoolQC', 'Fence', 'Misc
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1210]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span> <span class="o">=</span> <span class="n">drop_zero_columns</span><span class="p">(</span><span class="n">df_output</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -7900,7 +7900,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1211]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span>
@@ -7914,7 +7914,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1211]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8246,7 +8246,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1212]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">engineer_number_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -8279,7 +8279,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1213]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">engineer_object_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -8289,7 +8289,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
     <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">object_cols</span><span class="p">:</span>
         <span class="n">value_counts</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">max_proportion</span> <span class="o">=</span> <span class="n">value_counts</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">max_proportion</span> <span class="o">&lt;</span> <span class="mf">0.8</span><span class="p">:</span>  <span class="c1"># Giả sử ngưỡng là 50%</span>
+        <span class="k">if</span> <span class="n">max_proportion</span> <span class="o">&lt;</span> <span class="mf">0.7</span><span class="p">:</span>  <span class="c1"># Giả sử ngưỡng là 80%</span>
             <span class="n">skewed_features</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Features with less skewed distribution: </span><span class="si">{</span><span class="n">skewed_features</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">skewed_features</span>
@@ -8303,7 +8303,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1214]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">engineer_object_columns1</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -8314,15 +8314,116 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=23211316">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1215]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">engineer_object_columns2</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">target_col</span><span class="o">=</span><span class="s1">'SalePrice'</span><span class="p">):</span>
+    <span class="n">object_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">'object'</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+    <span class="n">correlations</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">object_cols</span><span class="p">:</span>
+        <span class="c1"># Encode categorical column</span>
+        <span class="n">encoded_col</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+        <span class="c1"># Calculate correlation with target</span>
+        <span class="n">corr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">encoded_col</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target_col</span><span class="p">])[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">corr</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.2</span><span class="p">:</span>
+            <span class="n">correlations</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">corr</span>
+    
+    <span class="k">return</span> <span class="n">correlations</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=81f9bec0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1216]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Độ tương quan các cột object với SalePrice</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">correlate_object_with_target</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">target_col</span><span class="o">=</span><span class="s1">'SalePrice'</span><span class="p">):</span>
+    <span class="n">correlations</span> <span class="o">=</span> <span class="n">engineer_object_columns2</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    
+    <span class="c1"># Convert to Series for easier handling</span>
+    <span class="n">corr_series</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">correlations</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correlation of object columns with target:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">corr_series</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">corr_series</span>
+
+<span class="n">correlate_object_with_target</span><span class="p">(</span><span class="n">df_output</span><span class="p">,</span> <span class="n">target_col</span><span class="o">=</span><span class="s1">'SalePrice'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Correlation of object columns with target:
+Foundation       0.382479
+CentralAir       0.251328
+Electrical       0.234716
+PavedDrive       0.231357
+RoofStyle        0.222405
+SaleCondition    0.213092
+Neighborhood     0.210851
+LotShape        -0.255580
+BsmtExposure    -0.309043
+HeatingQC       -0.400178
+GarageType      -0.415283
+GarageFinish    -0.549247
+KitchenQual     -0.589189
+BsmtQual        -0.620886
+ExterQual       -0.636884
+dtype: float64
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1216]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Foundation       0.382479
+CentralAir       0.251328
+Electrical       0.234716
+PavedDrive       0.231357
+RoofStyle        0.222405
+SaleCondition    0.213092
+Neighborhood     0.210851
+LotShape        -0.255580
+BsmtExposure    -0.309043
+HeatingQC       -0.400178
+GarageType      -0.415283
+GarageFinish    -0.549247
+KitchenQual     -0.589189
+BsmtQual        -0.620886
+ExterQual       -0.636884
+dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dbff1e43">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1217]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">final_feature</span> <span class="o">=</span> <span class="n">engineer_number_columns</span><span class="p">(</span><span class="n">df_output</span><span class="p">)</span> <span class="o">+</span> <span class="n">engineer_object_columns1</span><span class="p">(</span><span class="n">df_output</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">final_feature</span> <span class="o">=</span> <span class="n">engineer_number_columns</span><span class="p">(</span><span class="n">df_output</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">engineer_object_columns2</span><span class="p">(</span><span class="n">df_output</span><span class="p">)</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -8345,7 +8446,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1218]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">final_feature</span><span class="p">)</span>
@@ -8359,9 +8460,9 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1218]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>33</pre>
+<pre>28</pre>
 </div>
 </div>
 </div>
@@ -8382,7 +8483,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1219]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">final_feature</span><span class="p">)</span>
@@ -8396,16 +8497,15 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1219]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array(['1stFlrSF', 'BsmtExposure', 'BsmtFinType1', 'BsmtQual',
-       'ExterQual', 'Exterior1st', 'Exterior2nd', 'Fireplaces',
-       'Foundation', 'FullBath', 'GarageArea', 'GarageCars',
-       'GarageFinish', 'GarageType', 'GarageYrBlt', 'GrLivArea',
-       'HeatingQC', 'HouseStyle', 'KitchenQual', 'LandSlope', 'LotConfig',
-       'LotShape', 'MSZoning', 'Neighborhood', 'OverallQual', 'RoofStyle',
+<pre>array(['1stFlrSF', 'BsmtExposure', 'BsmtQual', 'CentralAir', 'Electrical',
+       'ExterQual', 'Fireplaces', 'Foundation', 'FullBath', 'GarageArea',
+       'GarageCars', 'GarageFinish', 'GarageType', 'GarageYrBlt',
+       'GrLivArea', 'HeatingQC', 'KitchenQual', 'LotShape',
+       'Neighborhood', 'OverallQual', 'PavedDrive', 'RoofStyle',
        'SaleCondition', 'SalePrice', 'TotRmsAbvGrd', 'TotalBsmtSF',
-       'YearBuilt', 'YearRemodAdd', 'YrSold'], dtype='&lt;U13')</pre>
+       'YearBuilt', 'YearRemodAdd'], dtype='&lt;U13')</pre>
 </div>
 </div>
 </div>
@@ -8415,7 +8515,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1220]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="n">final_feature</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8429,7 +8529,7 @@ Columns to drop: ['MasVnrArea', 'BsmtFinSF2', '2ndFlrSF', 'LowQualFinSF', 'BsmtF
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1220]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>SalePrice         0
 OverallQual       0
@@ -8444,26 +8544,21 @@ YearBuilt         0
 YearRemodAdd      0
 GarageYrBlt      81
 Fireplaces        0
-BsmtExposure     38
-BsmtFinType1     37
-BsmtQual         37
-Exterior1st       0
-Exterior2nd       0
-ExterQual         0
-Foundation        0
-GarageFinish     81
-GarageType       81
-HeatingQC         0
-HouseStyle        0
-KitchenQual       0
-LandSlope         0
-LotConfig         0
 LotShape          0
-MSZoning          0
 Neighborhood      0
 RoofStyle         0
+ExterQual         0
+Foundation        0
+BsmtQual         37
+BsmtExposure     38
+HeatingQC         0
+CentralAir        0
+Electrical        1
+KitchenQual       0
+GarageType       81
+GarageFinish     81
+PavedDrive        0
 SaleCondition     0
-YrSold            0
 dtype: int64</pre>
 </div>
 </div>
@@ -8497,7 +8592,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1221]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
@@ -8510,6 +8605,29 @@ dtype: int64</pre>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">df_scaled</span><span class="p">[</span><span class="n">feature_list</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_scaled</span><span class="p">[</span><span class="n">feature_list</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">df_scaled</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9363d91a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1222]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">scale_features</span><span class="p">(</span><span class="n">df_train</span><span class="p">,</span> <span class="n">df_test</span><span class="p">,</span> <span class="n">feature_list</span><span class="p">):</span>
+    <span class="n">feature_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">'SalePrice'</span><span class="p">)</span>
+    <span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+    <span class="n">df_scaled1</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">df_scaled2</span> <span class="o">=</span> <span class="n">df_test</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">df_scaled1</span><span class="p">[</span><span class="n">feature_list</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_scaled1</span><span class="p">[</span><span class="n">feature_list</span><span class="p">])</span>
+    <span class="n">df_scaled2</span><span class="p">[</span><span class="n">feature_list</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_scaled2</span><span class="p">[</span><span class="n">feature_list</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">df_scaled1</span><span class="p">,</span> <span class="n">df_scaled2</span>
 </pre></div>
 </div>
 </div>
@@ -8546,7 +8664,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1223]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_BsmtExposure</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'No'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'Av'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="s1">'Mn'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'Gd'</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
@@ -8560,7 +8678,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1224]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span> <span class="o">=</span> <span class="p">{}</span>
@@ -8575,7 +8693,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1225]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'BsmtExposure'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="s1">'BsmtExposure'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">cls_BsmtExposure</span><span class="p">)</span>
@@ -8589,7 +8707,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="s1">'BsmtExposure'</span><span class="p">)</span>
@@ -8603,7 +8721,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1226]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>BsmtExposure
 1.0    953
@@ -8645,7 +8763,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_BsmtFinType1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Unf'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'GLQ'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'ALQ'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'BLQ'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'Rec'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'LwQ'</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
@@ -8659,7 +8777,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1228]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'BsmtFinType1'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_BsmtFinType1</span>
@@ -8673,7 +8791,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1229]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'BsmtFinType1'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="s1">'BsmtFinType1'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">cls_BsmtFinType1</span><span class="p">)</span>
@@ -8725,7 +8843,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1230]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_BsmtQual</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Ex'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'Gd'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'TA'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'Fa'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'Po'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'NA'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
@@ -8739,7 +8857,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1231]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'BsmtQual'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_BsmtQual</span>
@@ -8778,7 +8896,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1232]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_ExterQual</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Ex'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'Gd'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'TA'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'Fa'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'Po'</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
@@ -8792,7 +8910,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1233]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'ExterQual'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_ExterQual</span>
@@ -8831,7 +8949,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1234]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_Exterior1st</span> <span class="o">=</span> <span class="p">{</span>
@@ -8856,7 +8974,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1235]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'Exterior1st'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_Exterior1st</span>
@@ -8895,7 +9013,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1236]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_Exterior2nd</span> <span class="o">=</span> <span class="p">{</span>
@@ -8921,7 +9039,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1237]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'Exterior2nd'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_Exterior2nd</span>
@@ -8946,7 +9064,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1238]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_output</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'Fireplaces'</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -8960,7 +9078,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1238]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;Axes: xlabel='Fireplaces', ylabel='Count'&gt;</pre>
 </div>
@@ -9018,7 +9136,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1239]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_Foundation</span> <span class="o">=</span> <span class="p">{</span>
@@ -9037,7 +9155,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1240]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'Foundation'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_Foundation</span>
@@ -9062,7 +9180,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1241]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'FullBath'</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -9076,7 +9194,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1241]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -9088,7 +9206,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1242]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'FullBath'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -9102,7 +9220,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1242]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>FullBath
 2    768
@@ -9158,7 +9276,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1243]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cut_GarageArea</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -9182,7 +9300,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1244]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cut_feature</span> <span class="o">=</span> <span class="p">{}</span>
@@ -9247,7 +9365,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1245]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_GarageFinish</span> <span class="o">=</span> <span class="p">{</span>
@@ -9265,7 +9383,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1246]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'GarageFinish'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_GarageFinish</span>
@@ -9305,7 +9423,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1247]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_GarageType</span> <span class="o">=</span> <span class="p">{</span>
@@ -9326,7 +9444,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1248]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'GarageType'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_GarageType</span>
@@ -9365,7 +9483,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cut_GarageYrBlt</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -9387,7 +9505,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1250]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cut_feature</span><span class="p">[</span><span class="s1">'GarageYrBlt'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cut_GarageYrBlt</span>
@@ -9426,7 +9544,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1251]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cut_GrLivArea</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -9443,12 +9561,12 @@ Name: count, dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a7ab62e0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9bca6192">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1252]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cut_feature</span><span class="p">[</span><span class="s1">'GrLivArea'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cut_GrLivArea</span>
@@ -9487,7 +9605,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1253]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_HeatingQC</span> <span class="o">=</span> <span class="p">{</span>
@@ -9507,7 +9625,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1254]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'HeatingQC'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_HeatingQC</span>
@@ -9546,7 +9664,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1255]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_HouseStyle</span> <span class="o">=</span> <span class="p">{</span>
@@ -9565,7 +9683,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1256]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'HouseStyle'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_HouseStyle</span>
@@ -9604,7 +9722,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1257]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_KitchenQual</span> <span class="o">=</span> <span class="p">{</span>
@@ -9624,7 +9742,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1258]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'KitchenQual'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_KitchenQual</span>
@@ -9664,11 +9782,12 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1259]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># drop_cols = ['LandSlope']</span>
-<span class="n">final_feature</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">'LandSlope'</span><span class="p">)</span>
+<span class="k">if</span> <span class="s1">'LandSlope'</span> <span class="ow">in</span> <span class="n">final_feature</span><span class="p">:</span>
+    <span class="n">final_feature</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">'LandSlope'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9704,7 +9823,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1260]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_LotConfig</span> <span class="o">=</span> <span class="p">{</span>
@@ -9722,7 +9841,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1261]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'LotConfig'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_LotConfig</span>
@@ -9761,7 +9880,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1262]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_LotShape</span> <span class="o">=</span> <span class="p">{</span>
@@ -9779,7 +9898,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1263]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'LotShape'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_LotShape</span>
@@ -9818,7 +9937,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1264]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_MSZoning</span> <span class="o">=</span> <span class="p">{</span>
@@ -9836,7 +9955,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1265]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'MSZoning'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_MSZoning</span>
@@ -9875,7 +9994,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1266]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>category_encoders
@@ -9924,7 +10043,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1267]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">category_encoders</span><span class="w"> </span><span class="kn">import</span> <span class="n">TargetEncoder</span>
@@ -9945,7 +10064,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1268]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">target_encode_feature_</span><span class="p">(</span><span class="n">df_train</span><span class="p">,</span> <span class="n">df_test</span><span class="p">,</span> <span class="n">feature_name</span><span class="p">,</span> <span class="n">target_name</span><span class="o">=</span><span class="s1">'SalePrice'</span><span class="p">):</span>
@@ -9988,7 +10107,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1269]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cut_OverallQual</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -10008,7 +10127,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1270]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cut_feature</span><span class="p">[</span><span class="s1">'OverallQual'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cut_OverallQual</span>
@@ -10047,7 +10166,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1271]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_RoofStyle</span> <span class="o">=</span> <span class="p">{</span>
@@ -10065,7 +10184,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1272]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'RoofStyle'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_RoofStyle</span>
@@ -10104,7 +10223,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1273]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_SaleCondition</span> <span class="o">=</span> <span class="p">{</span>
@@ -10124,7 +10243,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1274]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'SaleCondition'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_SaleCondition</span>
@@ -10163,7 +10282,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1275]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cut_TotRmsAbvGrd</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -10183,7 +10302,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1276]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cut_feature</span><span class="p">[</span><span class="s1">'TotRmsAbvGrd'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cut_TotRmsAbvGrd</span>
@@ -10244,11 +10363,12 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1277]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">engineer_HouseAge</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="n">df</span><span class="p">[</span><span class="s1">'HouseAge'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'YrSold'</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s1">'YearBuilt'</span><span class="p">]</span>
+    <span class="n">final_feature</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'HouseAge'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">df</span>
 </pre></div>
 </div>
@@ -10282,11 +10402,12 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1278]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">engineer_IsRemodeled</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="n">df</span><span class="p">[</span><span class="s1">'IsRemodeled'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'YearRemodAdd'</span><span class="p">]</span> <span class="o">!=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'YearBuilt'</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">final_feature</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'IsRemodeled'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">df</span>
 </pre></div>
 </div>
@@ -10298,7 +10419,7 @@ Requirement already satisfied: packaging&gt;=21.3 in c:\users\loq\appdata\local\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1279]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cls_feature</span><span class="p">:</span>
@@ -10337,12 +10458,182 @@ Encoding column: SaleCondition
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e7d62e69">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="32.-'CentralAir'">32. 'CentralAir'<a class="anchor-link" href="#32.-'CentralAir'">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2413d61a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1280]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_CentralAir</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Y'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">'N'</span><span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5243d4b1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1281]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'CentralAir'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_CentralAir</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=19a3cc34">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1282]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'CentralAir'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="s1">'CentralAir'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">cls_CentralAir</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9aac6307">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="33.-'Electrical'">33. 'Electrical'<a class="anchor-link" href="#33.-'Electrical'">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6e6801c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1283]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_Electrical</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'SBrkr'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">'FuseA'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s1">'Others'</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9e557620">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1284]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'Electrical'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_Electrical</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c89f079e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1285]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'Electrical'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="s1">'Electrical'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">cls_Electrical</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">cls_Electrical</span> <span class="k">else</span> <span class="n">cls_Electrical</span><span class="p">[</span><span class="s1">'Others'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=07fc7a8a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="34.-'PavedDrive'">34. 'PavedDrive'<a class="anchor-link" href="#34.-'PavedDrive'">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=719751ef">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1286]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_PavedDrive</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Y'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">'N'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s1">'P'</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">}</span>   
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4c7c0c46">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1287]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cls_feature</span><span class="p">[</span><span class="s1">'PavedDrive'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls_PavedDrive</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=92cd79a7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1288]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="p">[</span><span class="s1">'PavedDrive'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="s1">'PavedDrive'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">cls_PavedDrive</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0d26fb7b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1289]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">preprocessing_feature_01</span><span class="p">(</span><span class="n">df_data</span><span class="p">,</span> <span class="n">is_train</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">is_debug</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -10351,7 +10642,11 @@ Encoding column: SaleCondition
 
     <span class="c1"># Chuẩn bị các cột map và cut</span>
     <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cls_feature</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-        <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notna</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">))</span>
+        <span class="k">if</span> <span class="s1">'Others'</span> <span class="ow">in</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">x</span><span class="p">]</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="k">else</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="s1">'Others'</span><span class="p">])</span> 
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notna</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">cls_feature</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">))</span>
+        
     <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cut_feature</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
         <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">cut_feature</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
 
@@ -10420,7 +10715,7 @@ Encoding column: SaleCondition
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1290]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">main_feat01</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -10431,8 +10726,9 @@ Encoding column: SaleCondition
     <span class="n">df_output_train</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">preprocessing_feature_01</span><span class="p">(</span><span class="n">df_train</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">is_debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">df_output_test</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">preprocessing_feature_01</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">is_debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="c1"># Encoder Neighborhood with Target Encoder</span>
-    <span class="n">df_output_train</span><span class="p">,</span> <span class="n">df_output_test</span> <span class="o">=</span> <span class="n">target_encode_feature_</span><span class="p">(</span><span class="n">df_output_train</span><span class="p">,</span> <span class="n">df_output_test</span><span class="p">,</span> <span class="n">feature_name</span><span class="o">=</span><span class="s1">'Neighborhood'</span><span class="p">,</span> <span class="n">target_name</span><span class="o">=</span><span class="s1">'Output'</span><span class="p">)</span>
     
+    <span class="n">df_output_train</span><span class="p">,</span> <span class="n">df_output_test</span> <span class="o">=</span> <span class="n">target_encode_feature_</span><span class="p">(</span><span class="n">df_output_train</span><span class="p">,</span> <span class="n">df_output_test</span><span class="p">,</span> <span class="n">feature_name</span><span class="o">=</span><span class="s1">'Neighborhood'</span><span class="p">,</span> <span class="n">target_name</span><span class="o">=</span><span class="s1">'Output'</span><span class="p">)</span>
+    <span class="n">df_output_train</span><span class="p">,</span> <span class="n">df_output_test</span> <span class="o">=</span> <span class="n">scale_features</span><span class="p">(</span><span class="n">df_output_train</span><span class="p">,</span> <span class="n">df_output_test</span><span class="p">,</span> <span class="n">feature_list</span><span class="o">=</span><span class="n">final_feature</span><span class="p">)</span>
     <span class="c1"># saving</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">save_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     
